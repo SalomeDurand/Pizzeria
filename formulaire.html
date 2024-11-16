@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/form.css">
+    <title>Chez Luigi</title>
+</head>
+
+<body>
+    <h1>Formulaire de commande</h1>
+    <form action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <label>Nom* :<input name="Nom" type="text" placeholder="Dupont" required></label>
+            <label>Prénom* :<input name="Prenom" type="text" placeholder="Jean" required></label>
+            <label>Adresse* :<textarea cols=30 rows=3 name="Adresse" placeholder="3 rue du Four 69210 L'Arbresle"
+                    required></textarea></label>
+            <label>Téléphone* :<input id="tel" name="Tel" type="text" placeholder="00.00.00.00.00" required
+                    pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}">
+            </label>
+            <p class="precisions">Merci de saisir un numéro de téléphone valide.</p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Choix de la pizza</legend>
+            <label>Votre pizza :<select name="pizza">
+                    <option value="ChMi">Chèvre-miel</option>
+                    <option value="Marg">Margarita</option>
+                    <option value="Pepe">Peperroni</option>
+                    <option value="Vege">Végétarienne</option>
+                    <option value="4s">4 saisons</option>
+                    <option value="Tartiflette">Tartiflette</option>
+                </select>
+            </label>
+
+            <label>Taille de la pizza :<select name="taille">
+                    <option value="S">petite</option>
+                    <option value="M">moyenne</option>
+                    <option value="L">grande</option>
+                </select>
+            </label>
+
+            <label>
+                Nombre de pizza :
+                <input name="nbr-pizza" type="number" value="1" required>
+            </label>
+
+            <div class="titre-option">Éléments à enlever :</div>
+            <label><input name="option" type="checkbox" value="sans-fro" class="option">sans fromage</label>
+            <label><input name="option" type="checkbox" value="sans-glu" class="option">sans gluten</label>
+            <label><input name="option" type="checkbox" value="sans-via" class="option">sans viande</label>
+
+            <div class="titre-option">Éléments à ajouter (max 1 option) :</div>
+            <label><input name="option" type="radio" class="option" value="+Pep">Peperroni</label>
+            <label><input name="option" type="radio" class="option" value="+Ol">Olives</label>
+            <label><input name="option" type="radio" class="option" value="+Fro">Fromage</label>
+            <label><input name="option" type="radio" class="option" value="+Jam">Jambon</label>
+            <label><input name="option" type="radio" class="option" value="+Oeuf">Œuf</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informations complémentaires</legend>
+            <label>Date de livraison* :
+                <input type="date" name="date" required>
+            </label>
+
+            <label>Horaire de livraison souhaité :<select name="horaire">
+                    <option value="12:00">12 h 00</option>
+                    <option value="12:15">12 h 15</option>
+                    <option value="12:30">12 h 30</option>
+                    <option value="12:45">12 h 45</option>
+                    <option value="13:00">13 h 00</option>
+                    <option value="13:15">13 h 15</option>
+                </select>
+            </label>
+
+            <label>Allergies :<textarea name="allergies" cols=30 rows=3
+                    placeholder="Je suis allergique à..."></textarea></label>
+            <div class="paiement">Moyen de paiement :
+            <label><input name="paiement" type="radio" class="option" value="CB" checked>Carte bleue</label>
+            <label><input name="paiement" type="radio" class="option" value="TicketsR">Tickets restaurant</label>
+            <label><input name="paiement" type="radio" class="option" value="Cheque">Chèque</label>
+            <label><input name="paiement" type="radio" class="option" value="Liquide">Espèces</label>
+        </div>
+        </fieldset>
+        <p>* champ requis</p>
+        <button type="submit">Envoyer</button>
+        <button type="reset">Effacer</button>
+    </form>
+</body>
+
+</html>

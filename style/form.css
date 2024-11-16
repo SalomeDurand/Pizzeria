@@ -1,0 +1,38 @@
+input:not(.option),
+textarea,
+select {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+#tel {
+  margin-bottom: 0rem;
+}
+
+.precisions {
+  color: black;
+  margin-top: 0rem;
+  font-size: 0.7em;
+}
+
+fieldset {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.paiement {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+label {
+  display: block;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1em;
+  border-radius: 50px;
+  border: none;
+}

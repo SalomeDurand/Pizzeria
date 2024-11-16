@@ -1,0 +1,83 @@
+/* galerie photos */
+
+.lien-conteneur-photo {
+    position: relative;
+}
+
+.photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.lien-conteneur-photo:hover .photo-hover {
+    display: flex;
+}
+
+.grid-paysages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-paysages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15em 15em;
+    gap: 1em;
+    margin-bottom: 3em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: black, solid;
+    padding: 1em;
+}
+
+/* bouton commander en bas de page */
+
+#button {
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding: 1em;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    text-decoration: none;
+    background: rgb(135, 31, 31);
+    z-index: 1;
+}
+
+#button::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    transform: translate(-100%, 0) rotate(50deg);
+    transform-origin: top left;
+    transition: all 0.35s;
+    background-color: #185f16;
+    z-index: -1;
+    content: "";
+}
+
+#button:hover {
+    color: #fff;
+}
+
+#button:hover::before {
+    transform: translate(0, 0);
+}

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="GitLab Pages">
+  <meta name="viewport" content="width=device-width">
   <title>Chez Luigi</title>
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/style.css">
@@ -12,120 +13,162 @@
 <body>
   <header>
     <nav>
-      <ul>
-        <li>
-          <a href="index.html">Accueil</a>
-        </li>
-        <li><a href="formulaire.html">Formulaire de commande</a></li>
-        <li><a href="contact.html">Contact</a>
-        </li>
-      </ul>
+      <a href="index.html">Accueil</a>
+      <a href="formulaire.html">Commander</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
     <h1>🇮🇹 Benvenuto ! 🇮🇹</h1>
     <p>
-      Venez découvrir nos pizzas cuites au feu de bois, préparées par Luigi et son équipe.
+      Venez découvrir nos pizzas cuites au feu de bois, préparées par <a class="liens" href="#equipe">Luigi et
+        son équipe</a>, d'après <a class="liens" target="_blank" href="https://fr.wikipedia.org/wiki/Pizza#Histoire">la
+        tradition ancestrale</a>.
     </p>
 
-    <h2>Qui sommes nous ?</h2>
-    <p>
-      Après 10 ans d'expériences en tant que pizzaïolo en Italie, Luigi a décidé de s'importer en France. Avec son
-      équipe d'artisans italiens, ils sont désormais reconnus modialement dans leur dommaine. Alors venez nous tester et
-      découvrez <a class="liens_internes" href="#creations">nos plus belles créations</a> !
-    </p>
+    <section id="presentaiton">
+      <h2>Qui sommes nous ?</h2>
+      <p>
+        Après 10 ans d'expériences en tant que pizzaïolo en Italie, Luigi a décidé de s'importer en France. Avec son
+        équipe d'artisans italiens, ils sont désormais reconnus modialement dans leur dommaine. Alors venez nous tester
+        et
+        découvrez <a class="liens" href="#creations">nos plus belles créations</a> !
+      </p>
+    </section>
 
-    <h2>Les tarifs</h2>
-    <table>
-      <thead>
-        <tr>
-          <td></td>
-          <td>pizza taille S</td>
-          <td>pizza taille M</td>
-          <td>pizza taille L</td>
-          <td>menu (pizza M + boisson)</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>La margherita</th>
-          <td>8 €</td>
-          <td>11 €</td>
-          <td>13 €</td>
-          <td>12 €</td>
-        </tr>
-        <tr>
-          <th>La jambon</th>
-          <td>10 €</td>
-          <td>13 €</td>
-          <td>15 €</td>
-          <td>14 €</td>
-        </tr>
-        <tr>
-          <th>La burrata</th>
-          <td>10 €</td>
-          <td>13 €</td>
-          <td>15 €</td>
-          <td>14 €</td>
-        </tr>
-        <tr>
-          <th>La truffe</th>
-          <td>12 €</td>
-          <td>15 €</td>
-          <td>17 €</td>
-          <td>16 €</td>
-        </tr>
-        <tr>
-          <th>La chorizo</th>
-          <td>10 €</td>
-          <td>13 €</td>
-          <td>15 €</td>
-          <td>14 €</td>
-        </tr>
-        <tr>
-          <th>La végétarienne</th>
-          <td>8 €</td>
-          <td>11 €</td>
-          <td>13 €</td>
-          <td>12 €</td>
-        </tr>
-      </tbody>
-    </table>
+    <section class="tableau">
+      <h2>Les tarifs</h2>
+      <table>
+        <thead>
+          <tr>
+            <td></td>
+            <th>pizza taille S</th>
+            <th>pizza taille M</th>
+            <th>pizza taille L</th>
+            <th>menu (pizza M + boisson)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>La margherita</th>
+            <td>8 €</td>
+            <td>11 €</td>
+            <td>13 €</td>
+            <td>12 €</td>
+          </tr>
+          <tr>
+            <th>La jambon</th>
+            <td>10 €</td>
+            <td>13 €</td>
+            <td>15 €</td>
+            <td>14 €</td>
+          </tr>
+          <tr>
+            <th>La burrata</th>
+            <td>10 €</td>
+            <td>13 €</td>
+            <td>15 €</td>
+            <td>14 €</td>
+          </tr>
+          <tr>
+            <th>La truffe</th>
+            <td>12 €</td>
+            <td>15 €</td>
+            <td>17 €</td>
+            <td>16 €</td>
+          </tr>
+          <tr>
+            <th>La chorizo</th>
+            <td>10 €</td>
+            <td>13 €</td>
+            <td>15 €</td>
+            <td>14 €</td>
+          </tr>
+          <tr>
+            <th>La végétarienne</th>
+            <td>8 €</td>
+            <td>11 €</td>
+            <td>13 €</td>
+            <td>12 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-    <h2 id="creations">Nos plus belles créations</h2>
-    <div class="grid-paysages">
-      <a href="images/margherita.jpg" class="lien-conteneur-photo">
-        <img src="images/margherita.jpg" alt="Pizza margherita">
-        <div class="photo-hover">Voir la photo</div>
-      </a>
-      <a href="images/jambon.jpeg" class="lien-conteneur-photo">
-        <img src="images/jambon.jpeg" alt="Pizza jambon">
-        <div class="photo-hover">Voir la photo</div>
-      </a>
-      <a href="images/burrata.webp" class="lien-conteneur-photo">
-        <img src="images/burrata.webp" alt="Pizza burrata">
-        <div class="photo-hover">Voir la photo</div>
-      </a>
-      <a href="images/truffe.jpg" class="lien-conteneur-photo">
-        <img src="images/truffe.jpg" alt="Pizza truffe">
-        <div class="photo-hover">Voir la photo</div>
-      </a>
-      <a href="images/chorizo.webp" class="lien-conteneur-photo">
-        <img src="images/chorizo.webp" alt="Pizza chorizo">
-        <div class="photo-hover">Voir la photo</div>
-      </a>
-      <a href="images/vegetarienne.jpg" class="lien-conteneur-photo">
-        <img src="images/vegetarienne.jpg" alt="Pizza végétarienne">
-        <div class="photo-hover">Voir la photo</div>
-      </a>
-    </div>
+    <section id="creations">
+      <h2>Nos plus belles créations</h2>
+      <div class="pizza">
+        <a href="images/pizzas/margherita.jpg" class="lien-conteneur-photo">
+          <img src="images/pizzas/margherita.jpg" alt="Pizza margherita">
+          <div class="photo-hover">Voir la photo</div>
+        </a>
+        <a href="images/pizzas/jambon.jpeg" class="lien-conteneur-photo">
+          <img src="images/pizzas/jambon.jpeg" alt="Pizza jambon">
+          <div class="photo-hover">Voir la photo</div>
+        </a>
+        <a href="images/pizzas/burrata.jpg" class="lien-conteneur-photo">
+          <img src="images/pizzas/burrata.jpg" alt="Pizza burrata">
+          <div class="photo-hover">Voir la photo</div>
+        </a>
+        <a href="images/pizzas/truffe.jpg" class="lien-conteneur-photo">
+          <img src="images/pizzas/truffe.jpg" alt="Pizza truffe">
+          <div class="photo-hover">Voir la photo</div>
+        </a>
+        <a href="images/pizzas/chorizo.jpg" class="lien-conteneur-photo">
+          <img src="images/pizzas/chorizo.jpg" alt="Pizza chorizo">
+          <div class="photo-hover">Voir la photo</div>
+        </a>
+        <a href="images/pizzas/vegetarienne.jpg" class="lien-conteneur-photo">
+          <img src="images/pizzas/vegetarienne.jpg" alt="Pizza végétarienne">
+          <div class="photo-hover">Voir la photo</div>
+        </a>
+      </div>
 
-    <a id="button" href="formulaire.html">Commander</a>
+      <div class="button">
+        <a href="formulaire.html">Commander</a>
+      </div>
+    </section>
+
+    <section id="equipe">
+      <h2>L'équipe</h2>
+      <div class="grid-profils">
+        <div class="profil">
+          <p>Luigi</p>
+          <p>Pizzaïolo et fondateur</p>
+          <img src="images/profils/Luigi.jpg" alt="illustration de Luigi">
+        </div>
+
+        <div class="profil">
+          <p>Pablo</p>
+          <p>Pizzaïolo et fils du fondateur</p>
+          <img src="images/profils/Pablo.jpg" alt="illustration de Pablo">
+        </div>
+
+        <div class="profil">
+          <p>Mario</p>
+          <p>Vendeur</p>
+          <img src="images/profils/Mario.jpg" alt="illustration de Mario">
+        </div>
+
+        <div class="profil">
+          <p>Francesca</p>
+          <p>Vendeuse</p>
+          <img src="images/profils/Francesca.jpg" alt="illustration de Francesca">
+        </div>
+
+        <div class="profil">
+          <p>Maria</p>
+          <p>Commerciale</p>
+          <img src="images/profils/Maria.jpg" alt="illustration de Maria">
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>🍕 Made with ❤️ by Luigi 🍕</p>
+    <p>© ce site est un projet étudiant</p>
   </footer>
 </body>
 

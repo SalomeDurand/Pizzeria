@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="GitLab Pages">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style/contact.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="formulaire.html">Commander</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>À votre écoute !</h1>
+    <p id="intro"><a class="liens" target="_blank" href="index.html#equipe">Luigi et son équipe</a> se tiennent à votre
+      disposition
+      pour toute demande d'information !
+    </p>
+
+    <section id="contact">
+      <h2>Envoyez-nous votre demande</h2>
+      <form action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+        <fieldset>
+          <legend>Informations personnelles</legend>
+          <label>Nom* :<input name="Nom" type="text" placeholder="Dupont" required></label>
+          <label>Prénom* :<input name="Prenom" type="text" placeholder="Jean" required></label>
+          <label class="col_2">Téléphone* :<input id="tel" name="Tel" type="text" placeholder="00.00.00.00.00" required
+              pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}">
+          </label>
+          <p id="precisions">Merci de saisir un numéro de téléphone valide.</p>
+          <label class="col_2">Message* :<textarea cols=30 rows=3 name="Message" placeholder="Je suis très satisfait..."
+              required></textarea></label>
+        </fieldset>
+        <p>* champ requis</p>
+        <div id="button-container">
+          <button type="submit">Envoyer</button>
+          <button type="reset">Effacer</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="adresse">
+    <h2>Pour nous contacter</h2>
+      <span>Luigi's Pizza</span>
+      <span>43 BD du 11 Novembre 1918</span>
+      <span>69622 Villeurbanne</span>
+      <span>France</span>
+      <p>Ouverture : Tous les jours de 10 h à 00 h 00</p>
+      <p>Téléphone : 04 58 31 22 32 <span>(accueil téléphonique pendant nos horaires d'ouvertures)</span></p>
+      <p>Accès : Tram T1 et T2 - Arrêt Doua Gaston Berger</p>
+    </section>
+
+    <section id="plan">
+      <h2>Nous retrouver</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.5995053442925!2d4.869738712343923!3d45.77921597096027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea9faa779b65%3A0x144056f0ded89c51!2s43%20Bd%20du%2011%20Novembre%201918%2C%2069100%20Villeurbanne!5e0!3m2!1sfr!2sfr!4v1733233883752!5m2!1sfr!2sfr"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>🍕 Made with ❤️ by Luigi 🍕</p>
+    <p>© ce site est un projet étudiant</p>
+  </footer>
+</body>
+
+</html>

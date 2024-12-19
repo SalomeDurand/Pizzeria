@@ -1,0 +1,207 @@
+@media (max-width:700px) {
+    main {
+        margin-right: 2em;
+        margin-left: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 19em;
+        height: 15em;
+        border: 0;
+    }
+
+    fieldset+p {
+        margin-bottom: 0.5em;
+    }
+}
+
+@media (min-width:701px) and (max-width:900px) {
+    main {
+        margin-right: 2em;
+        margin-left: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 27em;
+        height: 15em;
+        border: 0;
+    }
+
+    fieldset+p {
+        margin-bottom: 0.5em;
+    }
+}
+
+@media (min-width:901px) {
+    main {
+        margin-right: 6em;
+        margin-left: 6em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5em;
+    }
+
+    #adresse {
+        grid-column-start: 2;
+    }
+
+    fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6em;
+    }
+
+    .col_2 {
+        grid-column-end: span 2;
+    }
+
+    #plan {
+        grid-column: span 2;
+    }
+
+    #intro,
+    h1 {
+        grid-column: span 2;
+    }
+
+    #precisions {
+        grid-column: span 2
+    }
+
+    iframe {
+        width: 40em;
+        height: 25em;
+        border: 0;
+    }
+
+    fieldset+p {
+        margin-bottom: 0;
+    }
+}
+
+main {
+    margin-top: 2em;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#adresse {
+    text-align: center;
+}
+
+fieldset+p {
+    margin-top: 0;
+}
+
+input,
+textarea {
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d0cccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: rgb(135, 31, 31);
+}
+
+#tel {
+    margin-bottom: 0em;
+}
+
+#precisions {
+    color: black;
+    font-size: 0.7em;
+    margin-top: 0;
+}
+
+fieldset {
+    padding: 1rem;
+    border-color: #185f16;
+    background-color: #edf8eb;
+    border-radius: 20px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*boutons*/
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-right: 0.5rem;
+    font-size: 0.85em;
+    border-radius: 50px;
+    padding: 0.8rem;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    text-decoration: none;
+    background: #185f16;
+    z-index: 1;
+    border: none;
+}
+
+button::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    transform: translate(-100%, 0) rotate(50deg);
+    transform-origin: top left;
+    transition: all 0.35s;
+    background-color: rgb(135, 31, 31);
+    z-index: -1;
+    content: "";
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:hover::before {
+    transform: translate(0, 0);
+}
+
+#plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
